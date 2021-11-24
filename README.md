@@ -1,6 +1,6 @@
-# [Your Article Name]
+# Learn PWA - Service Workers
 
-This example is part of the [[name of article]](link/to/article) guide on [web.dev](https://web.dev).
+This example is part of the [[Learn PWA - Service Workers Chapter](link/to/article) guide on [web.dev](https://web.dev).
 
 ## License
 
