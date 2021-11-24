@@ -4,20 +4,28 @@ SPDX-License-Identifier: Apache-2.0 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>Service Worker Registration Demo</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <script src="app.js"></script>
   </head>  
   <body>
     <div class="container">
-      <div class="instructions">
-        Logical tab order (click here before pressing tab)
-      </div>
-      <button>🥝Kiwiz🥝</button>
-      <button>🍑Peach🍑</button>
-      <button>🥥Coconut🥥</button>
+      <h1>
+        Service Worker
+      </h1>
+      <p class="instructions">
+        Check within your browser developer tools service worker registration
+      </p>
+      
+      <section class="toolbar">
+        <button id="register">Register</button>
+        <button id="unregister">Unregister</button>
+      </section>
+      
+      <output></output>
     </div>
   </body>
 </html>
