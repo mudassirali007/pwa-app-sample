@@ -1,8 +1,13 @@
 {
     "name": "Learn PWA",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": ".",
+    "scope": ".",
     "display": "standalone",
+    "background_color": "#F8F8F8",
+    "theme_color": "#F8F8F8",
+    "description": "PWA",
+    "lang": "en-US",
+    "orientation": "landscape-primary",
     "icons": [{
         "src": "public/pwa/icons/96.png",
         "sizes": "96x96",
