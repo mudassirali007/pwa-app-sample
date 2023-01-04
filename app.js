@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", async event => {
   document.querySelector("#single").addEventListener("click", cacheSingleFile);
   document.querySelector("#multiple").addEventListener("click", cacheMultipleFiles);
   document.querySelector("#delete").addEventListener("click", deleteCache);
+  document.querySelector("#fetch").addEventListener("click", fetchCall);
   
 });
 
@@ -90,9 +91,7 @@ async function cacheMultipleFiles() {
   if ('caches' in window) {
     try {
       const cache = await caches.open(cacheName);
-      const urlsToCache = ["./", "dummy.css", "dummy.html", "dummy.json", 
-                          "https://cdn.glitch.me/606fe2ae-f386-47d3-9892-c6d18ca17998%2F9b775a52-d700-4208-84e9-18578ee75266_icon.jpeg?v=1637764108088",
-                          "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+      const urlsToCache = ["./", "dummy.css", "dummy.html", "dummy.json"]
       await cache.addAll(urlsToCache);
       showResult(urlsToCache.length + " files were cached on " + cacheName);
       
@@ -112,4 +111,11 @@ async function deleteCache() {
    } else {
      showResult("Cache Storage not available");
    }
+}
+
+
+async function fetchCall() {
+  fetch('https://dummyjson.com/products/1')
+.then(res => res.json())
+.then(json => console.log(json))
 }
