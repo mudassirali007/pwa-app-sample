@@ -1,6 +1,7 @@
 {
     "name": "Learn PWA",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "icons": [{
         "src": "public/pwa/icons/96.png",
